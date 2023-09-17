@@ -9,12 +9,16 @@ body{
     align-items: center;
     justify-content: center;
 }
+#warning{
+    display: none;
+}
 #calculator{
     /* margin: auto; */
     width: 70vw;
     height: 70vh;
     border: 1px solid red;
     background-color: bisque;
+    /* display: none; */
    
 }
 #heading{
@@ -85,3 +89,12 @@ body{
     font-size: 45px;
 }
 
+@media only screen and (max-width:1024px)
+{
+    #calculator{
+        display: none;
+    }
+    #warning{
+        display: block;
+    }
+}
